@@ -3,13 +3,10 @@
 <head>
 
     <link rel="icon" href="Imagenes/mona-lisa.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,500;0,900;1,700&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -26,7 +23,7 @@
         </figure>
             <ul class="Seleccion" >
                 <li><a href="#Art">Art Gallery</a></li>
-                <li><a href="#Stories">Stories</a></li>
+                <li><a href="#Stories">More</a></li>
                 <li> <a href="#About">About Us</a></li>
             </ul>
         <div class="Boton_cont" >
@@ -37,158 +34,258 @@
         <section class="container1" >
             <article  class="cont_titulo" >
                 <h1 class="titulo" >
-                    Welcome to !LoveArt
+                    ! Love  Art
                 </h1>
-                <h3 class="sub_t" >
-                    "Every artist was first an amateur."
-                </h3>
             </article>
         </section>
     </figure>
-    <nav class="segunda_barra" >
-        <figure>
-            <img src="Imagenes/art-gallery.png" alt="" width="100%" height="100%">
-        </figure>
+    <nav class="segunda_barra" id="Art">
         <article>
-            <h1>Welcome to the Art Gallery</h1>
+            <h1>Art Gallery</h1>
         </article>
     </nav>
-    <section class="museum" id="Art">
-        <article class="articulo1" >
-            <div>
-                <figure class="Monalisa_cont"><img
-                src="Imagenes/art-g4744b80b7_1920.jpg" alt="Mona lisa" width="100%" height="100%">
+    <section class="museum">
+        <article class="articulo1">
+            <div class="museum_cont">
+                <figure><img
+                src="Imagenes/art-g4744b80b7_1920.jpg" alt="Mona lisa"
+                width="100%" height="100%" class="arte_vertical" id="Artmov">
             </div>
             <div>
                 <h1 class="Titulo_art" >Mona Lisa</h1>
-                <p class="Description_art" >Obra más conocida como La Gioconda, fue un
-                cuadro pintado por Da Vinci entre 1503 y 1519, y adquirido
-                posteriormente por el rey Francisco I. Actualmente se cree que
-                representa a la mujer de Francesco Bartolomeo de Giocondo, cuyo
-                nombre real era Lisa Gherardini.</p>
-
+                <p class="Description_art" > <strong>Artista:</strong> Leonardo da Vinci <br>
+                    <strong> Fecha estimada: </strong> 1503 a 1519<br>
+                    <strong> Dónde verlo:</strong> Museo del Louvre (París)<br>
+                </p>
+                <div class="More_cont" >
+                    <a href="" class="a_img">
+                        <img src="Imagenes/plus-sign.png" alt="ReadMore" class="Read_more" height="100%" width="100%">
+                    </a>
+                 </div>
             </div>
         </article>
         <article class="articulo2" >
-            <div>
+            <div class="museum_cont">
                 <figure>
-                    <img src="Imagenes/maundy-thursday-gc1517e4fe_1920.jpg" alt="" width="100%" height="50%">
+                    <img src="Imagenes/maundy-thursday-gc1517e4fe_1920.jpg" alt="" width="100%" height="100%" id="Artmov">
                 </figure>
             </div>
-            <div>
+        <div class="Texto_horizontal" >
             <h1 class="Titulo_art" >Ultima Cena</h1>
-            <p class="Description_art" >La Última Cena de Leonardo da Vinci
-            (Cenacolo Vinciano) es una de las pinturas más famosas del mundo, la
-            obra fue pintada entre 1494 y 1498 bajo el gobierno de Ludovico el
-            Moro y representa la última "cena" entre Jesús y sus discípulos.</p>
+            <p class="Description_art" >
+                    <strong>Artista:</strong> Leonardo da Vinci <br>
+                    <strong> Fecha estimada:</strong> 1495 a 1498<br>
+                    <strong> Dónde verlo:</strong> Santa Maria delle Grazie (Milán, Italia)<br>
+            </p>
+            <a href="" class="a_img">
+                <img src="Imagenes/plus-sign.png" alt="ReadMore" class="Read_more" height="100%" width="100%">
+            </a>
             </div>
         </article>
         <article class="articulo3" >
-            <div>
-                <figure><img src="Imagenes/Van gogh.jpg" alt="Noche estrellada" width="100%" height="100%"></figure>
+            <div class="museum_cont">
+                <figure>
+                    <img src="Imagenes/Van gogh.jpg" alt="Noche estrellada"
+                    width="100%" height="100%" class="arte_vertical" id="Artmov">
+                </figure>
             </div>
             <div>
             <h1 class="Titulo_art" >Noche Estrellada</h1>
-            <p class="Description_art" >Pintado en 1889, la obra trata de las
-            vistas nocturnas que tenía Van Gogh desde su habitación en el
-            sanatorio mental de Saint-Remy, donde pasó los últimos años de su
-            vida..</p>
+            <p class="Description_art" >
+                <strong>Artista:</strong> Vincent van Gogh<br>
+                <strong> Fecha estimada:</strong> 1889<br>
+                <strong> Dónde verlo: </strong>Museo de Arte Moderno (Nueva York)<br>
+             </p>
+             <div class="More_cont" >
+                <a href="" class="a_img">
+                    <img src="Imagenes/plus-sign.png" alt="ReadMore" class="Read_more" height="100%" width="100%">
+                </a>
+             </div>
             </div>
         </article>
         <article class="articulo4" >
-            <div>
-                <figure><img src="Imagenes/edvard-munch-g62e798966_1920.jpg" alt="El grito" width="100%" height="100%"></figure>
+            <div class="museum_cont">
+                <figure>
+                    <img src="Imagenes/edvard-munch-g62e798966_1920.jpg" alt="El
+                    grito" width="100%" height="100%" class="arte_vertical" id="Artmov">
+                </figure>
             </div>
             <div>
             <h1 class="Titulo_art" >El Grito</h1>
-            <p class="Description_art" >Edvard Munch pintó ‘The Scream’ en 1895,
-            y aunque muchos de sus contemporáneos le calificaran de loco, lo
-            cierto es que ha pasado a la historia como uno de los artistas más
-            relevantes del siglo XIX y XX. ‘El grito’ refleja la
-            ansiedad y la angustia del ser humano, y ese era el mensaje que
-            quiso transmitir su autor. Munch en su propio cuadro.</p>
+            <p class="Description_art" >
+                <strong>Artista:</strong> Edvard Munch<br>
+                <strong> Fecha estimada:</strong> 1893<br>
+                <strong> Dónde verlo:</strong> Museo Nacional (Oslo, Noruega -
+                apertura en 2020)<br>
+            </p>
+        <div class="More_cont">
+            <a href="" class="a_img">
+                <img src="Imagenes/plus-sign.png" alt="ReadMore" class="Read_more" height="100%" width="100%">
+            </a>
+         </div>
             </div>
         </article>
         <article class="articulo5" >
-            <div>
-                <figure><img src="Imagenes/Guernica.PNG" alt="Guernica" width="100%" height="100%"></figure>
+            <div class="museum_cont">
+                <figure>
+                    <img src="Imagenes/Guernica.jpg" alt="Guernica" width="100%" height="100%" id="Artmov">
+                </figure>
             </div>
-            <div>
+            <div class="Texto_horizontal">
             <h1 class="Titulo_art" >Guernica</h1>
-            <p class="Description_art" >Representa el bombardeo aéreo alemán de
-            la ciudad de Guernica en la región vasca durante la guerra civil
-            española. La pintura tiene ese estilo distintivo de Picasso, y su
-            examen inquebrantable de los horrores de la guerra la convirtió en
-            una parte esencial de la cultura y la historia del siglo XX.</p>
+            <p class="Description_art" >
+                <strong>Artista:</strong> Pablo Picasso<br>
+                <strong> Fecha estimada:</strong> 1937<br>
+                <strong> Dónde verlo:</strong> Museo Reina Sofía (Madrid)<br>
+            </p>
+            <a href="" class="a_img">
+                <img src="Imagenes/plus-sign.png" alt="ReadMore" class="Read_more" height="100%" width="100%">
+            </a>
             </div>
         </article>
         <article class="articulo6" >
-            <div>
-                <figure><img src="Imagenes/creation-of-man-g570f969f0_1920.jpg" alt="Guernica" width="100%" height="100%"></figure>
+            <div class="museum_cont">
+                <figure>
+                    <img src="Imagenes/creation-of-man-g570f969f0_1920.jpg"
+                    alt="Creacion de Adan" width="100%" height="100%" id="Artmov">
+                </figure>
             </div>
-            <div>
+            <div class="Texto_horizontal">
             <h1 class="Titulo_art" >Creación de Adán</h1>
-            <p class="Description_art" >Representa el bombardeo aéreo alemán de
-            la ciudad de Guernica en la región vasca durante la guerra civil
-            española. La pintura tiene ese estilo distintivo de Picasso, y su
-            examen inquebrantable de los horrores de la guerra la convirtió en
-            una parte esencial de la cultura y la historia del siglo XX.</p>
+            <p class="Description_art" >
+                <strong>Artista:</strong> Miguel Ángel<br>
+                <strong> Fecha estimada:</strong> 1508 a 1512<br>
+                <strong> Dónde verlo:</strong> Capilla Sixtina (Ciudad del Vaticano)<br>
+            </p>
+            <a href="" class="a_img">
+                <img src="Imagenes/plus-sign.png" alt="ReadMore" class="Read_more" height="100%" width="100%">
+            </a>
             </div>
         </article>
         <article class="articulo7" >
-            <div>
-                <figure><img src="Imagenes/Las_Meninas_02.jpg" alt="Guernica" width="100%" height="100%"></figure>
+            <div class="museum_cont">
+                <figure>
+                    <img src="Imagenes/Las_Meninas_02.jpg" alt="Las Meninas"
+                    width="100%" height="100%" class="arte_vertical" id="Artmov">
+                </figure>
             </div>
             <div>
             <h1 class="Titulo_art" >Las Meninas</h1>
-            <p class="Description_art" >Representa el bombardeo aéreo alemán de
-            la ciudad de Guernica en la región vasca durante la guerra civil
-            española. La pintura tiene ese estilo distintivo de Picasso, y su
-            examen inquebrantable de los horrores de la guerra la convirtió en
-            una parte esencial de la cultura y la historia del siglo XX.</p>
+            <p class="Description_art" >
+                <strong>Artista:</strong> Diego Velázquez<br>
+                <strong> Fecha estimada:</strong> 1656<br>
+                <strong> Dónde verlo:</strong> Museo del Prado (Madrid)<br>
+        </p>
+        <div class="More_cont" >
+            <a href="" class="a_img">
+                <img src="Imagenes/plus-sign.png" alt="ReadMore" class="Read_more" height="100%" width="100%">
+            </a>
+         </div>
             </div>
         </article>
         <article class="articulo8" >
-            <div>
-                <figure><img src="Imagenes/Venus.jpg" alt="Guernica" width="100%" height="100%"></figure>
+            <div class="museum_cont">
+                <figure>
+                    <img src="Imagenes/Venushd.jpg" alt="Nacimiento de Venus"
+                    width="100%" height="100%" id="Artmov">
+                </figure>
+            </div>
+            <div class="Texto_horizontal">
+            <h1 class="Titulo_art" >Nacimiento de Venus</h1>
+            <p class="Description_art" >
+                <strong>Artista:</strong> Sandro Botticelli<br>
+                <strong> Fecha estimada:</strong> 1485<br>
+                <strong> Dónde verlo:</strong> Le Gallerie Degli Uffizi (Florencia, Italia)<br>
+            </p>
+            <a href="" class="a_img">
+                <img src="Imagenes/plus-sign.png" alt="ReadMore" class="Read_more" height="100%" width="100%">
+            </a>
+            </div>
+        </article>
+        <article class="articulo9" >
+            <div class="museum_cont">
+                <figure>
+                    <img src="Imagenes/kiss-klimt-cke.PNG" alt="Nacimiento de
+                    Venus" width="100%" height="100%" id="Artmov">
+                </figure>
             </div>
             <div>
-            <h1 class="Titulo_art" >El Nacimiento de Venus</h1>
-            <p class="Description_art" >Representa el bombardeo aéreo alemán de
-            la ciudad de Guernica en la región vasca durante la guerra civil
-            española. La pintura tiene ese estilo distintivo de Picasso, y su
-            examen inquebrantable de los horrores de la guerra la convirtió en
-            una parte esencial de la cultura y la historia del siglo XX.</p>
+            <h1 class="Titulo_art" >El Beso</h1>
+            <p class="Description_art" >
+                <strong>Artista:</strong> Gustav Klimt<br>
+                <strong> Fecha estimada:</strong> 1907 a 1908<br>
+                <strong> Dónde verlo:</strong> Museo Upper Belvedere (Viena, Austria)<br>
+            </p>
+            <div class="More_cont" >
+                <a href="" class="a_img">
+                    <img src="Imagenes/plus-sign.png" alt="ReadMore" class="Read_more" height="100%" width="100%">
+                </a>
+            </div>
+            </div>
+        </article>
+        <article class="articulo10" >
+            <div class="museum_cont">
+                <figure>
+                    <img src="Imagenes/Jovenperla.jpg"
+                    alt="La Joven de la Perla" width="100%" height="100%" id="Artmov">
+                </figure>
+            </div>
+            <div>
+            <h1 class="Titulo_art" >La Joven de la Perla</h1>
+            <p class="Description_art" >
+                <strong>Artista:</strong> Johannes Vermeer<br>
+                <strong> Fecha estimada:</strong> 1665<br>
+                <strong> Dónde verlo:</strong> Mauritshuis (La Haya, Países Bajos)<br>
+            </p>
+            <div class="More_cont" >
+                <a href="" class="a_img">
+                    <img src="Imagenes/plus-sign.png" alt="ReadMore" class="Read_more" height="100%" width="100%">
+                </a>
+            </div>
+            </div>
+        </article>
+        <article class="articulo11" >
+            <div class="museum_cont">
+                <figure>
+                    <img src="Imagenes/Rondanoche.jpg" alt="Nacimiento de Venus"
+                    width="100%" height="100%" id="Artmov">
+                </figure>
+            </div>
+            <div class="Texto_horizontal">
+            <h1 class="Titulo_art" >La Ronda de la Noche</h1>
+            <p class="Description_art" >
+                <strong>Artista:</strong> REMBRANDT VAN RIJN<br>
+                <strong> Fecha estimada:</strong> 1642<br>
+                <strong> Dónde verlo:</strong> Museo Nacional de Ámsterdam (Países Bajos)<br>
+            </p>
+            <a href="" class="a_img">
+                <img src="Imagenes/plus-sign.png" alt="ReadMore" class="Read_more" height="100%" width="100%">
+            </a>
+            </div>
+        </article>
+        <article class="articulo12" >
+            <div class="museum_cont">
+                <figure>
+                    <img src="Imagenes/La balsa de la medusa.Png"
+                    alt="Nacimiento de Venus" width="100%" height="100%" id="Artmov">
+                </figure>
+            </div>
+            <div class="Texto_horizontal">
+            <h1 class="Titulo_art" >La Balsa de la Medusa</h1>
+            <p class="Description_art" >
+                <strong>Artista:</strong> THÉODORE GÉRICAULT<br>
+                <strong> Fecha estimada:</strong> 1818-9<br>
+                <strong> Dónde verlo:</strong> Museo del Louvre (París)<br>
+            </p>
+            <a href="" class="a_img">
+                <img src="Imagenes/plus-sign.png" alt="ReadMore" class="Read_more" height="100%" width="100%">
+            </a>
             </div>
         </article>
     </section>
-    <figure class="fondo2" >
-        <footer class="Footer" >
-            <aside class="pie1" >
-                <div class="titulo" >
-                    <h3>Any questions?</h3>
-                </div>
-                    <figure class="img1" >
-                        <img src="Imagenes/letter-g5f7cb6310_1280.png" alt="Letter" class="letter" width="100%">
-                    </figure>
-                    <figure class="img2" >
-                        <img src="Imagenes/smartphone-ga72fd31e3_1280.png" alt="Smartphone" class="Smart" width="100%" >
-                    </figure>
-                    <p class="t1" >
-                        Juanpicos98@outlook.es
-                    </p>
-                    <p class="t2" >
-                        669 - 151 - 3233
-                    </p>
-            </aside>
-            <aside class="pie2">
-                hola
-            </aside>
-            <aside class="pie3">
-                Hola
-            </aside>
+    <figure class="Cont_louvre" >
+        <img src="Imagenes/louvre-museum-2218336.jpg" alt="Louvre" width="100%" height="100%" class="img_louvre" >
     </figure>
-    </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 </html>
