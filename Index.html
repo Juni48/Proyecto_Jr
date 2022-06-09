@@ -16,9 +16,9 @@
 <body>
     <!--Esta es la barra de tareas-->
     <nav class="barra_tareas" >
-        <figure class="Logo" >
+        <figure class="Logo_cont">
             <a href="Index.html">
-                <img src="Imagenes/art-gallery.png" alt="Logo" class="logito" width="100%" >
+                <img src="Imagenes/art-gallery.png" alt="Logo" id="logo_barra" width="100%">
             </a>
         </figure>
             <ul class="Seleccion" >
@@ -27,21 +27,19 @@
                 <li> <a href="#About">About Us</a></li>
             </ul>
         <div class="Boton_cont" >
-            <a href="Cuack"><button class="cuack" >Contact me</button></a>
+            <a href="/"><button class="cuack" >Contact me</button></a>
         </div>
     </nav>
-    <figure class="Fondo" >
-        <section class="container1" >
-            <article  class="cont_titulo" >
+    <figure class="Fondo_inicio" >
+            <div  class="cont_titulo" >
                 <h1 class="titulo" >
                     ! Love  Art
                 </h1>
-            </article>
-        </section>
+            </div>
     </figure>
-    <nav class="segunda_barra" id="Art">
+    <nav class="segunda_barra">
         <article>
-            <h1>Art Gallery</h1>
+            <h1 id="Art">Art Gallery</h1>
         </article>
     </nav>
     <section class="museum">
@@ -139,7 +137,7 @@
                 <strong> Dónde verlo:</strong> Museo Reina Sofía (Madrid)<br>
             </p>
             <a href="" class="a_img">
-                <img src="Imagenes/plus-sign.png" alt="ReadMore" class="Read_more" height="100%" width="100%">
+                <img src="Imagenes/plus-sign.png" alt="ReadMore" class="Read_more Horizontal" height="100%" width="100%">
             </a>
             </div>
         </article>
@@ -198,14 +196,14 @@
                 <strong> Dónde verlo:</strong> Le Gallerie Degli Uffizi (Florencia, Italia)<br>
             </p>
             <a href="" class="a_img">
-                <img src="Imagenes/plus-sign.png" alt="ReadMore" class="Read_more" height="100%" width="100%">
+                <img src="Imagenes/plus-sign.png" alt="ReadMore" class="Read_more Horizontal" height="100%" width="100%">
             </a>
             </div>
         </article>
         <article class="articulo9" >
             <div class="museum_cont">
                 <figure>
-                    <img src="Imagenes/kiss-klimt-cke.PNG" alt="Nacimiento de
+                    <img src="Imagenes/kiss-klimt-cke.PNG" class="arte_vertical" alt="Nacimiento de
                     Venus" width="100%" height="100%" id="Artmov">
                 </figure>
             </div>
@@ -227,7 +225,7 @@
             <div class="museum_cont">
                 <figure>
                     <img src="Imagenes/Jovenperla.jpg"
-                    alt="La Joven de la Perla" width="100%" height="100%" id="Artmov">
+                    alt="La Joven de la Perla" class="arte_vertical" width="100%" height="100%" id="Artmov">
                 </figure>
             </div>
             <div>
@@ -259,7 +257,7 @@
                 <strong> Dónde verlo:</strong> Museo Nacional de Ámsterdam (Países Bajos)<br>
             </p>
             <a href="" class="a_img">
-                <img src="Imagenes/plus-sign.png" alt="ReadMore" class="Read_more" height="100%" width="100%">
+                <img src="Imagenes/plus-sign.png" alt="ReadMore" class="Read_more Horizontal" height="100%" width="100%">
             </a>
             </div>
         </article>
@@ -278,7 +276,7 @@
                 <strong> Dónde verlo:</strong> Museo del Louvre (París)<br>
             </p>
             <a href="" class="a_img">
-                <img src="Imagenes/plus-sign.png" alt="ReadMore" class="Read_more" height="100%" width="100%">
+                <img src="Imagenes/plus-sign.png" alt="ReadMore" class="Read_more Horizontal" height="100%" width="100%">
             </a>
             </div>
         </article>
@@ -300,15 +298,17 @@
                         <div class="img-wrapper">
                             <img src="Imagenes/Carta1.jpg" alt="...">
                         </div>
-                        <div class="card-body">
+                        <div class="card-body ">
                           <h5 class="card-title">Smithsonian Institution, Washington, DC</h5>
                           <p class="card-text"><b>Principales atracciones:</b> Las
                           zapatillas de color rojo rubí de Dorothy, los vestidos
                           de las primeras damas, y el original del himno
                           americano
+                          <br>
+                          <br>
                           </p>
                           <a href="" class="a_img">
-                            <img src="Imagenes/plus-sign.png" alt="ReadMore" class="Read_more" height="100%" width="100%">
+                            <img src="Imagenes/plus-sign.png" alt="ReadMore" class="Read_more" id="readmore_large" height="100%" width="100%">
                         </a>
                         </div>
                       </div>
@@ -318,9 +318,12 @@
                         </div>
                         <div class="card-body">
                           <h5 class="card-title">Museo del Louvre, París, Francia</h5>
-                          <p class="card-text"><b>Principales atracciones:</b> "Venus de Milo", "Victoria de Samotracia", y la "Mona Lisa" de Leonardo da Vinci .</p>
+                          <p class="card-text"><b>Principales atracciones:</b> "Venus de Milo", "Victoria de Samotracia", y la "Mona Lisa" de Leonardo da Vinci .
+                        <br>
+                        <br>
+                        </p>
                           <a href="" class="a_img">
-                            <img src="Imagenes/plus-sign.png" alt="ReadMore" class="Read_more" height="100%" width="100%">
+                            <img src="Imagenes/plus-sign.png" alt="ReadMore" class="Read_more" id="readmore_large" height="100%" width="100%">
                         </a>
                         </div>
                       </div>
@@ -332,7 +335,7 @@
                           <h5 class="card-title">Museo de la Acrópolis, Atenas, Grecia</h5>
                           <p class="card-text"><b>Principales atracciones:</b> El friso del Partenón está montado sobre una estructura con exactamente las mismas dimensiones que la cella del Partenón, dando la visión completa de todos los detalles.</p>
                           <a href="" class="a_img">
-                            <img src="Imagenes/plus-sign.png" alt="ReadMore" class="Read_more" height="100%" width="100%">
+                            <img src="Imagenes/plus-sign.png" alt="ReadMore" class="Read_more" id="readmore_large" height="100%" width="100%">
                         </a>
                         </div>
                       </div>
@@ -348,7 +351,7 @@
                           <h5 class="card-title">State Hermitage, San Petersburgo, Rusia</h5>
                           <p class="card-text"><b>Principales atracciones:</b> La galería del tesoro de oro y las piezas de la colección privada de Nicolás II, que incluye pinturas, dibujos y medallas creadas para conmemorar su coronación.</p>
                           <a href="" class="a_img">
-                            <img src="Imagenes/plus-sign.png" alt="ReadMore" class="Read_more" height="100%" width="100%">
+                            <img src="Imagenes/plus-sign.png" alt="ReadMore" class="Read_more" id="readmore_large" height="100%" width="100%">
                         </a>
                         </div>
                       </div>
@@ -360,7 +363,7 @@
                           <h5 class="card-title">British Museum, Londres, Inglaterra</h5>
                           <p class="card-text"><b>Principales atracciones:</b> La galería egipcia cuenta con la segunda mejor colección del mundo de antigüedades egipcias fuera del país de los faraones, incluyendo la Piedra de Rosetta, tallada en el año 196 a.C.</p>
                           <a href="" class="a_img">
-                            <img src="Imagenes/plus-sign.png" alt="ReadMore" class="Read_more" height="100%" width="100%">
+                            <img src="Imagenes/plus-sign.png" alt="ReadMore" class="Read_more" id="readmore_large" height="100%" width="100%">
                         </a>
                         </div>
                       </div>
@@ -370,9 +373,10 @@
                         </div>
                         <div class="card-body">
                           <h5 class="card-title">Museo del Prado, Madrid, España</h5>
-                          <p class="card-text"><b>Principales atracciones:</b> "Las Tres Gracias" de Rubens y "Las Meninas" de Velázquez.</p>
+                          <p class="card-text"><b>Principales atracciones:</b> "Las Tres Gracias" de Rubens y "Las Meninas" de Velázquez. <br>
+                        <br></p>
                           <a href="" class="a_img">
-                            <img src="Imagenes/plus-sign.png" alt="ReadMore" class="Read_more" height="100%" width="100%">
+                            <img src="Imagenes/plus-sign.png" alt="ReadMore" class="Read_more" id="readmore_large" height="100%" width="100%">
                         </a>
                         </div>
                       </div>
@@ -385,10 +389,10 @@
                             <img src="Imagenes/carta7.jpg" alt="...">
                         </div>
                         <div class="card-body">
-                          <h5 class="card-title">Metropolitan Museum of Art, Nueva York, Nueva York</h5>
+                          <h5 class="card-title">Metropolitan Museum of Art, Nueva York</h5>
                           <p class="card-text"><b>Principales atracciones:</b> "Adán y Eva", el conocido grabado de Alberto Durero, es sólo una de las muchas piezas impresionantes que descubrirás en el MET.</p>
                           <a href="" class="a_img">
-                            <img src="Imagenes/plus-sign.png" alt="ReadMore" class="Read_more" height="100%" width="100%">
+                            <img src="Imagenes/plus-sign.png" alt="ReadMore" class="Read_more" id="readmore_large" height="100%" width="100%">
                         </a>
                         </div>
                       </div>
@@ -398,9 +402,11 @@
                         </div>
                         <div class="card-body">
                           <h5 class="card-title">Galería de los Uffizi, Florencia, Italia</h5>
-                          <p class="card-text"><b>La atracción principal:</b> "El nacimiento de Venus" de Botticelli.</p>
+                          <p class="card-text"><b>La atracción principal:</b> "El nacimiento de Venus" de Botticelli. <br> 
+                            <br>
+                        </p>
                           <a href="" class="a_img">
-                            <img src="Imagenes/plus-sign.png" alt="ReadMore" class="Read_more" height="100%" width="100%">
+                            <img src="Imagenes/plus-sign.png" alt="ReadMore" class="Read_more" id="readmore_large" height="100%" width="100%">
                         </a>
                         </div>
                       </div>
@@ -410,9 +416,11 @@
                         </div>
                         <div class="card-body">
                           <h5 class="card-title">Rijksmuseum, Amsterdam, Países Bajos</h5>
-                          <p class="card-text"><b>La atracción principal:</b> "La ronda nocturna" de Rembrandt.</p>
+                          <p class="card-text"><b>La atracción principal:</b> "La ronda nocturna" de Rembrandt. <br>
+                        <br>
+                        </p>
                           <a href="" class="a_img">
-                            <img src="Imagenes/plus-sign.png" alt="ReadMore" class="Read_more" height="100%" width="100%">
+                            <img src="Imagenes/plus-sign.png" alt="ReadMore" class="Read_more" id="readmore_large" height="100%" width="100%">
                         </a>
                         </div>
                       </div>
@@ -469,7 +477,9 @@
                     </div>
                     <div class="card-body">
                       <h5 class="card-title">Museo de la Acrópolis, Atenas, Grecia</h5>
-                      <p class="card-text"><b>Principales atracciones:</b> El friso del Partenón está montado sobre una estructura con exactamente las mismas dimensiones que la cella del Partenón, dando la visión completa de todos los detalles.</p>
+                      <p class="card-text"><b>Principales atracciones:</b> El
+                      Friso del Partenón <br>
+                      <br> </p>
                       <a href="" class="a_img">
                         <img src="Imagenes/plus-sign.png" alt="ReadMore" class="Read_more" id="readmore_smallscreen" height="100%" width="100%">
                     </a>
@@ -483,7 +493,7 @@
                     </div>
                     <div class="card-body">
                       <h5 class="card-title">State Hermitage, San Petersburgo, Rusia</h5>
-                      <p class="card-text"><b>Principales atracciones:</b> La galería del tesoro de oro y las piezas de la colección privada de Nicolás II, que incluye pinturas, dibujos y medallas creadas para conmemorar su coronación.</p>
+                      <p class="card-text"><b>Principales atracciones:</b> La galería del tesoro de oro y las piezas de la colección privada de Nicolás II.</p>
                       <a href="" class="a_img">
                         <img src="Imagenes/plus-sign.png" alt="ReadMore" class="Read_more" id="readmore_smallscreen" height="100%" width="100%">
                     </a>
@@ -497,7 +507,7 @@
                     </div>
                     <div class="card-body">
                       <h5 class="card-title">British Museum, Londres, Inglaterra</h5>
-                      <p class="card-text"><b>Principales atracciones:</b> La galería egipcia cuenta con la segunda mejor colección del mundo de antigüedades egipcias fuera del país de los faraones, incluyendo la Piedra de Rosetta, tallada en el año 196 a.C.</p>
+                      <p class="card-text"><b>Principales atracciones:</b>La Piedra de Rosetta, tallada en el año 196 a.C.</p>
                       <a href="" class="a_img">
                         <img src="Imagenes/plus-sign.png" alt="ReadMore" class="Read_more" id="readmore_smallscreen" height="100%" width="100%">
                     </a>
@@ -524,7 +534,7 @@
                         <img src="Imagenes/carta7.jpg" alt="...">
                     </div>
                     <div class="card-body">
-                      <h5 class="card-title">Metropolitan Museum of Art, Nueva York, Nueva York</h5>
+                      <h5 class="card-title">Metropolitan Museum of Art, Nueva York</h5>
                       <p class="card-text"><b>Principales atracciones:</b> "Adán y Eva", el conocido grabado de Alberto Durero, es sólo una de las muchas piezas impresionantes que descubrirás en el MET.</p>
                       <a href="" class="a_img">
                         <img src="Imagenes/plus-sign.png" alt="ReadMore" class="Read_more" id="readmore_smallscreen" height="100%" width="100%">
@@ -570,6 +580,9 @@
               <span class="visually-hidden">Next</span>
             </button>
           </div>
+          <section class="Container2">
+
+          </section>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 </html>
