@@ -2,65 +2,1040 @@ $colorbg: #191919;
 $font-color: ghostwhite;
 
 
+body {
+    text-decoration: none;
+    font-family: 'Lato', sans-serif;
+    background-color: black;
+
+    :root {
+        font-size: 16px;
+    }
+    .Fondo_inicio {
+        margin: 0;
+        background-image: url(Imagenes/arches-1850730.jpg);
+        background-size: cover;
+        background-position: bottom center;
+        height: 61rem;
+    }
+    .barra_tareas {
+        display: grid;
+        grid-template-columns: 1fr 5fr 1fr;
+        background-color: black;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        margin: 0rem .04rem;
+        z-index: 2;
 
 
+        .Logo_cont {
+            align-self: center;
+            justify-self: center;
+            margin: 1rem;
+        }
+        #logo_barra {
+            width: 3.5rem;
+        }
+        .Seleccion {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            font-size: 1.5rem;
+            list-style: none;
+            align-self: center;
+            text-align: center;
+            padding-top: 1rem;
+            a {
+                text-decoration: none;
+                color: white;
+            }
+        }
+        .Boton_cont {
+            align-self: center;
+            justify-self: center;
+        }
+        .Boton_cont .boton {
+            padding: .7rem;
+            border-radius: .5rem;
+            background-color: whitesmoke;
+            border-style: hidden;
+        }
+    }
+    .cont_titulo {
+         .titulo {
+            color: $font-color;
+            text-align: center;
+            font-size: 15rem;
+            padding-top: 5rem;
+            font-weight: 900;
+            -webkit-text-stroke: 1px black;
+        }
 
-
-
-
-
-
-
-.about_us {
-    background-color: $colorbg;
-    height: 40rem;
-    color: $font-color;
-    text-align: center;
-    padding: 5rem;
-                    h1 {
-                        font-size: 6rem;
-                        font-weight: 900;
-                    }
-                    p {
-                        margin: 2rem 15rem 0;
-                        font-size: 2rem;
-                    }
-                    figure {
-                        display: flex;
-                        justify-content: center;
-                        div {
-                            margin: 2.5rem 3rem;
-
-                             img {
-                                 width: 3rem;
-                                 height: 3rem;
-                                }
+    }
+    .segunda_barra {
+        height: 13rem;
+        background-color: #191919;
+        h1 {
+            text-align: center;
+            padding-top: 4rem;
+            font-size: 6rem;
+            color: $font-color;
+        }
+    }
+    .museum {
+        background-color: #191919;
+        height: 240rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        padding: 2rem 2rem;
+        gap: 2rem;
+        color:white;
+            & > * {
+            height: 30rem;
+            margin: 0;
+        }
+        article {
+            border: solid goldenrod 3px;
+            p {
+                font-size: 1.5rem;
+                padding: .5rem 2rem;
+                line-height: 2.5rem;
+            }
+            .Read_more {
+                width: 4rem;
+                height: 4rem;
+            }
+        }
+        .articulo1 {
+            display: flex;
+            grid-column: 1/3;
+            overflow: hidden;
+            height: 33rem;
+            div {
+                h1  {
+                    text-align: center;
+                    margin-top: 3rem;
+                }
+                p {
+                    text-align: justify;
+                }
+                figure img {
+                    height: 33rem;
+                    width: 30rem;
+                }
+            }
+            .More_cont {
+                margin-top: 7rem;
+                text-align: center;
+            }
+        }
+        .articulo2 {
+            grid-column: 3/5;
+            height: 33rem;
+            overflow: hidden;
+            margin: 0;
+            h1 {
+                text-align: center;
+                margin-top: 2rem;
+                margin-left: 1rem;
+            }
+            p {
+                text-align: justify;
+            }
+            figure {
+                margin: 0;
+                img {
+                    height: 22rem;
+                }
+            }
+            .Read_more {
+                margin-top: 3rem;
+                margin-right: 1rem;
+            }
+        }
+        .articulo3 {
+            display: flex;
+            grid-column: 1/3;
+            grid-row: 2;
+            height: 32rem;
+            overflow: hidden;
+            figure img{
+                height: 32rem;
+                width: 30rem;
+            }
+            h1 {
+                text-align: center;
+                margin-top: 4rem;
+            }
+            p {
+                text-align: justify;
+                margin-top: 1rem;
+                padding: 0rem 1.5rem;
+            }
+            .More_cont {
+                margin: 7rem 0rem;
+                text-align: center;
+            }
+        }
+        .articulo4 {
+            display: flex;
+            grid-column: 1/3;
+            grid-row: 3;
+            overflow: hidden;
+            height: 33rem;
+            h1 {
+                text-align: center;
+                padding-top: 1.7rem;
+            }
+            p {
+                text-align: justify;
+            }
+            figure img {
+                height: 33rem;
+                width: 30rem;
+            }
+            .More_cont {
+                margin: 9rem 0rem;
+                text-align: center;
+            }
+        }
+        .articulo5 {
+            grid-column: 3/5;
+            grid-row: 2;
+            height: 32rem;
+            h1 {
+                text-align: center;
+                margin-top: 2.3rem;
+                margin-left: 1rem;
+                margin-right: 3.5rem;
+            }
+            p {
+                text-align: justify;
+            }
+            figure img {
+                height: 22rem;
+            }
+            .Read_more {
+                margin-top: 2.5rem;
+                margin-left: 5rem;
+            }
+        }
+        .articulo6 {
+            grid-column: 3/5;
+            grid-row: 3;
+            height: 33rem;
+            h1 {
+                text-align: center;
+                margin-top: 1rem;
+                margin-left: 0;
+                padding: 1rem;
+                width: 17rem;
+            }
+            p {
+                text-align: justify;
+                margin-left: 0;
+                padding-left: 0;
+            }
+            figure img {
+                height: 22rem;
+            }
+            .Read_more {
+                margin-top: 2.5rem;
+            }
+        }
+        .articulo7 {
+            grid-column: 1/3;
+            grid-row: 4;
+            display: flex;
+            overflow: hidden;
+            height: 33rem;
+            h1 {
+                text-align: center;
+                padding-top: 2rem;
+            }
+            p {
+                text-align: justify;
+            }
+            figure img {
+                height: 33rem;
+                width: 30rem;
+            }
+            .More_cont {
+                margin: 8rem 0rem;
+                text-align: center;
+            }
+        }
+        .articulo8 {
+            grid-column: 3/5;
+            grid-row: 4;
+            height: 33rem;
+            h1 {
+                text-align: center;
+                margin-top:1rem;
+                margin-left: 0;
+                padding: 1rem;
+                width: 18rem;
+                height: 100%;
+            }
+            p {
+                text-align: justify;
+            }
+            figure img {
+                height: 21rem;
+            }
+            .Read_more {
+                margin-top: 2.5rem;
+                margin-right: 2rem;
+            }
+        }
+        .articulo9 {
+            grid-column: 1/3;
+            grid-row: 5;
+            display: flex;
+            overflow: hidden;
+            height: 33rem;
+            h1 {
+                text-align: center;
+                padding-top: 2rem;
+            }
+            figure img {
+                height: 33rem;
+                width: 30rem;
+            }
+            p {
+                text-align: justify;
+            }
+            .More_cont {
+                margin: 8rem 0rem;
+                text-align: center;
+            }
+        }
+        .articulo10 {
+            grid-column: 3/5;
+            grid-row: 5;
+            display: flex;
+            overflow: hidden;
+            height: 33rem;
+            h1 {
+                text-align: center;
+                padding-top: 2rem;
+            }
+            p {
+                text-align: justify;
+            }
+            figure img {
+                height: 33rem;
+                width: 30rem;
+            }
+            .More_cont {
+                margin: 8rem 0rem;
+                text-align: center;
+            }
+        }
+        .articulo11 {
+            grid-column: 1/3;
+            grid-row: 6/8;
+            height: 50rem;
+            h1 {
+                text-align: center;
+                margin-top:1rem;
+                margin-left: 0;
+                padding: 1rem;
+                width: 18rem;
+                height: 100%;
+            }
+            p {
+                text-align: justify;
+            }
+            figure img {
+                height: 38rem;
+            }
+            .Read_more {
+            margin-top: 2.5rem;
+            margin-right: 2rem;
+            }
+        }
+        .articulo12 {
+            grid-column: 3/5;
+            grid-row: 6/7;
+            height: 50rem;
+            h1 {
+                text-align: center;
+                margin-top:1rem;
+                margin-left: 0;
+                padding: 1rem;
+                width: 18rem;
+                height: 100%;
+            }
+            p {
+                text-align: justify;
+            }
+            figure img {
+                height: 38rem;
+             }
+            .Read_more {
+            margin-top: 2.5rem;
+            margin-right: 2rem;
+            margin-left: 5rem;
+            }
+        }
+        .Texto_horizontal {
+            display: flex;
+        }
+        .Description_art {
+            text-align: center;
+            font-size: 1.4rem;
+        }
+    }
+    .Cont_louvre {
+        margin: 0;
+        height: 60rem;
+        overflow: hidden;
+        position: relative;
+        display: inline-block;
+        text-align: center;
+        .img_louvre {
+            transition-property: all;
+            transition: 2s;
+            z-index: -1;
+            text-align: center;
+        }
+        .titulo_louvre {
+            position: absolute;
+            left: 440px;
+            z-index: 1;
+            color: $font-color;
+            text-align: center;
+            font-size: 15rem;
+            padding-top: 5rem;
+            font-weight: 900;
+            -webkit-text-stroke: 1px black;
+        }
+        
+    }
+    //<Carrusel>
+    #carouselExampleIndicators {
+        .carousel-control-prev {
+            background-color: #191919;
+            width: 6vh;
+            height: 6vh;
+            border-radius: 50%;
+            top: 50%;
+            margin-left: 1rem;
+            transform: translateY(-50%);
+        }
+        .carousel-control-next {
+            background-color: #191919;
+            width: 6vh;
+            height: 6vh;
+            border-radius: 50%;
+            top: 50%;
+            margin-right: 1rem;
+            transform: translateY(-50%);
+        }
+    }
+    #carouselExampleControls {
+        .carousel-control-prev {
+            background-color: #191919;
+            width: 6vh;
+            height: 6vh;
+            border-radius: 50%;
+            top: 50%;
+            margin-left: 1rem;
+            transform: translateY(-50%);
+        }
+        .carousel-control-next {
+            background-color: #191919;
+            width: 6vh;
+            height: 6vh;
+            border-radius: 50%;
+            top: 50%;
+            margin-right: 1rem;
+            transform: translateY(-50%);
+        }
+    }
+    .img-wrapper img {
+        max-width: 100%;
+        max-height: 100%;
+        height: 40rem;
+        width: 40rem;
+    }
+    .cards-wrapper .a_img img {
+        width: 4rem;
+        height: 4rem;
+    }
+    .card {
+        border-color: goldenrod;
+    }
+    .card-body {
+        height: 13rem;
+        background-color: $font-color;
+    }
+    #readmore_smallscreen {
+    width: 70px;
+    height: 70px;
+    }
+    //</Carrusel>
+    .about_us {
+        background-color: $colorbg;
+        height: 40rem;
+        color: $font-color;
+        text-align: center;
+        padding: 5rem;
+                        h1 {
+                            font-size: 6rem;
+                            font-weight: 900;
                         }
-                    }
-                    nav {
-                        display: flex;
-                        justify-content: center;
-                        div{
-                            margin: 0 2rem;
-                            button {
-                                width: 10rem;
-                                height: 5rem;
-                                font-size: 20px;
-                                font-weight: 700;
-                                background-color: black;
-                                color: $font-color;
-                                border-radius: 2rem;
-                                border:solid 1px silver;
+                        p {
+                            margin: 2rem 15rem 0;
+                            font-size: 2rem;
+                        }
+                        figure {
+                            display: flex;
+                            justify-content: center;
+                            div {
+                                margin: 2.5rem 3rem;
+    
+                                 img {
+                                     width: 3rem;
+                                     height: 3rem;
+                                    }
                             }
                         }
-                    }
-
-                    .Design_by {
-                        background-color: black;
-                    }
-}
+                        nav {
+                            display: flex;
+                            justify-content: center;
+                            div{
+                                margin: 0 2rem;
+                                button {
+                                    width: 10rem;
+                                    height: 5rem;
+                                    font-size: 20px;
+                                    font-weight: 700;
+                                    background-color: black;
+                                    color: $font-color;
+                                    border-radius: 2rem;
+                                    border:solid 1px silver;
+                                }
+                            }
+                        }
+    
+                        .Design_by {
+                            background-color: black;
+                        }
+    }
     .Design_by {
         text-align: center;
         color: $font-color;
         margin: 1rem 0;
     }
+    //<Transiciones>
+    .Read_more {
+    transition-property: all;
+    transition-duration: 1s;
+    }
+    .a_img:hover .Read_more {
+    -webkit-transform:scale(1.3);transform:scale(1.3);
+    transition: all 500ms ease-in-out;
+    }
+    #Artmov {
+    transition-property: all;
+    transition-duration: 3s;
+    }
+    .museum_cont:hover #Artmov {
+    filter: grayscale(80%);
+    transition: all 500ms ease-in-out;
+    }
+    .Cont_louvre:hover .img_louvre {
+    -webkit-transform:scale(1.1);transform:scale(1.1);
+    transition: 2s;
+
+    }
+    //</Transiciones>
+}
+
+@media screen and (max-width: 1440px) {
+    body {
+        .museum {
+            .arte_vertical {
+                width: 20rem !important;
+                .Titulo_art {
+                    padding-top: 1rem !important;
+                    }
+                    .Description_art {
+                        padding: 0 10px 0 0 !important;
+                        text-align: left !important;
+                    }
+            }
+            .Texto_horizontal{
+                .Titulo_art {
+                margin: 2rem 0 0 !important;
+                padding: 0 !important;
+                }
+                .Description_art {
+                    padding: 0 10px 0  !important;
+                    text-align: left !important;
+                }
+                .Read_more {
+                    margin: 2rem 0 0 0!important;
+                }
+            }
+        }
+        .titulo_louvre {
+            font-size: 10rem !important;
+            left: 23rem !important;
+        }
+        .card-body {
+            height: 15rem !important;
+            text-align: center !important;
+            .a_img {
+                width: fit-content;
+                height: fit-content;
+            }
+        }
+        .about_us {
+            h1 {
+                font-size: 5rem !important;
+            }
+            p {
+                margin: 1rem 2rem !important;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    body {
+        .Fondo_inicio{
+            height: 55rem !important;
+            .cont_titulo .titulo {
+                font-size: 10rem !important;
+            }
+        }
+        .More_cont {
+            margin: 5px !important;
+        }
+        .museum {
+            display: flex !important;
+            height: fit-content !important;
+            flex-direction: column;
+            text-align: center;
+            article {
+                display: inline !important;
+                height: fit-content !important;
+                .Read_more {
+                    margin: 5px !important;
+                    padding: 0 !important;
+                }
+            }
+            .Texto_vertical {
+                .Titulo_art {
+                    margin: auto !important;
+                    padding: 0px !important;
+                }
+                .Description_art {
+                    text-align: center !important;
+                }
+            }
+            .Texto_horizontal {
+                display: inline-block !important;
+                .Description_art {
+                text-align: center !important;
+                }
+                .Titulo_art {
+                    text-align: center !important;
+                    margin: auto !important;
+                }
+            }
+            .articulo1{
+                height: fit-content;
+                figure img {
+                    width: 90% !important;
+                }
+            }
+            .articulo2 {
+                display: inline-block !important;
+                height: fit-content;
+            }
+            .articulo3 figure img {
+                width: 100% !important;
+            }
+            .articulo4 figure img {
+                width: 100% !important;
+            }
+            .articulo7 figure img {
+                width: 100% !important;
+            }
+            .articulo9 figure img {
+                width: 100% !important;
+            }
+            .articulo10 figure img {
+                width: 100% !important;
+            }
+        }
+        .titulo_louvre {
+            font-size: 8rem !important;
+            left: 14rem !important;
+        }
+        .card-body {
+            height: 23rem !important;
+        }
+        .about_us {
+            h1 {
+                font-size: 4rem !important;
+            }
+            p {
+                margin: 1rem 2rem !important;
+                font-size: 30px !important;
+            }
+            figure div {
+                margin: 1rem 3rem !important;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        .Fondo_inicio{
+            height: 55rem !important;
+            .Titulo_art {
+                width: fit-content !important;
+            }
+        }
+        .Boton_cont {
+            display: none !important;
+        }
+        .cont_titulo .titulo {
+            font-size: 10rem;
+        }
+        .museum {
+            display: flex;
+            height: fit-content !important;
+            flex-direction: column;
+            text-align: center;
+            .Titulo_art {
+                margin: auto !important;
+                padding: 0px !important;
+            }
+            .Description_art {
+                text-align: center !important;
+            }
+            .Texto_horizontal {
+                display: inline-block;
+            }
+            article {
+                display: inline !important;
+                height: fit-content !important;
+                .Read_more {
+                    margin: 5px !important;
+                    padding: 0 !important;
+                }
+            }
+            .articulo1{
+                display: inline;
+                height: fit-content;
+                figure img {
+                    width: 100% !important;
+                }
+            }
+            .articulo2 {
+                display: inline-block !important;
+                height: fit-content;
+            }
+            .articulo3 figure img {
+                width: 100% !important;
+            }
+            .articulo4 figure img {
+                width: 100% !important;
+            }
+            .articulo7 figure img {
+                width: 100% !important;
+            }
+            .articulo9 figure img {
+                width: 100% !important;
+            }
+            .articulo10 figure img {
+                width: 100% !important;
+            }
+        }
+        .titulo_louvre {
+            font-size: 8rem !important;
+            left: 6rem !important;
+        }
+        .card-body {
+            height: 23rem !important;
+        }
+        .about_us {
+            padding: 2rem !important;
+            h1 {
+                font-size: 4rem !important;
+            }
+            p {
+                margin: 2rem !important;
+                font-size: 30px !important;
+            }
+            figure div {
+                margin: 1rem 3rem !important;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 425px) {
+    body {
+        margin: 0;
+        .barra_tareas {
+            align-content: center;
+            grid-template-columns: 1fr;
+            .Seleccion, .Boton_cont {
+                display: none !important;
+            }
+        }
+        .Fondo_inicio{
+            height: 50rem !important;
+            .cont_titulo .titulo {
+                font-size: 5rem !important;
+            }
+        }
+        .cont_titulo .titulo {
+            font-size: 5rem !important;
+            padding-top: 7rem !important;
+        }
+        .segunda_barra {
+            height: 100px;
+            h1 {
+                font-size: 60px;
+                color: $font-color;
+                padding-top: 20px;
+            }
+        }
+        .museum {
+            display: flex;
+            height: fit-content !important;
+            flex-direction: column;
+            text-align: center;
+            article {
+                display: inline !important;
+                height: fit-content !important;
+                .museum_cont {
+                    figure img{
+                        height: 425px !important;
+                    }
+                }
+                .Read_more {
+                    margin: 5px !important;
+                    padding: 0 !important;
+                }
+            }
+            .Texto_horizontal {
+                display: inline;
+            }
+            .Titulo_art {
+                margin: auto !important;
+                padding: 0px !important;
+            }
+            .Description_art {
+                display: none !important;
+            }
+            .articulo1{
+                display: inline;
+                height: fit-content;
+                figure img {
+                    width: 425px !important;
+                }
+            }
+            .articulo2 {
+                display: inline;
+                height: fit-content;
+            }
+            .articulo3 figure img {
+                width: 425px !important;
+            }
+            .articulo4 figure img {
+                width: 425px !important;
+            }
+            .articulo7 figure img {
+                width: 425px !important;
+            }
+            .articulo9 figure img {
+                width: 425px !important;
+            }
+            .articulo10 figure img {
+                width: 425px !important;
+            }
+        }
+        .Cont_louvre {
+            width: fit-content !important;
+            height: fit-content !important;
+            img {
+                width: 425px !important;
+                height: 425px !important;
+            }
+            .titulo_louvre {
+                font-size: 80px !important;
+                left: 30px !important;
+            }
+        }
+        .More_cont {
+            margin: 5px !important;
+        }
+        .card:not(:first-child){
+            display: none;
+        }
+        .card .img-wrapper img {
+            height: 25rem !important;
+        }
+        .card-body {
+            height: 15rem !important;
+            font-size: 17px !important;
+            text-align: center !important;
+        }
+        .about_us {
+            padding: 10px !important;
+            height: 30rem !important;
+            h1 {
+                font-size: 4rem !important;
+            }
+            p {
+                margin: 0 !important;
+                font-size: 18px !important;
+            }
+            figure div {
+                margin: 30px 15px !important;
+            }
+            nav div {
+                margin: 10px !important;
+                button {
+                    width: 120px !important;
+                    height: 90px !important;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 375px) {
+    body {
+        .Fondo_inicio{
+            height: 40rem !important;
+            .cont_titulo .titulo {
+                font-size: 5rem !important;
+            }
+        }
+        .Cont_louvre {
+            width: fit-content !important;
+            height: fit-content !important;
+            .titulo_louvre {
+                font-size: 60px !important;
+                left: 35px !important;
+            }
+            .img_louvre {
+               width: 375px !important;
+               height: 375px !important;
+            }
+        }
+        .card-body {
+            height: 17rem !important;
+        }
+        .about_us {
+            figure{
+                padding: 0 5px;
+                div {
+                    margin: 30px 15px !important;
+                    img {
+                        width: 40px !important;
+                        height: 40px !important;
+                    }
+                }
+            }
+            nav div {
+                margin: 10px !important;
+                a button {
+                    width: 105px !important;
+                    height: 70px !important;
+                    font-size: 16px !important;
+                    font-weight: 900 !important;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 320px) {
+    body {
+        .Fondo_inicio{
+            height: 40rem !important;
+            .cont_titulo {
+                .titulo {
+                    font-size: 4rem !important;
+                }
+            }
+        }
+        .museum{
+            article {
+                .museum_cont {
+                    figure img{
+                        height: 325px !important;
+                    }
+                }
+            }
+            .Titulo_art {
+                width: fit-content !important;
+            }
+        }
+        .Cont_louvre {
+            width: fit-content !important;
+            height: fit-content !important;
+            .img_louvre {
+                width: 320px !important;
+                height: 320px !important;
+            }
+            .titulo_louvre {
+                font-size: 60px !important;
+                left: 40px;
+            }
+        }
+        .card-body {
+            height: 18rem !important;
+        }
+        .card .img-wrapper img {
+            height: 20rem !important;
+        }
+        .about_us {
+            figure{
+                padding: 0 5px;
+                div {
+                    margin: 30px 15px 15px !important;
+                    img {
+                        width: 35px !important;
+                        height: 40px !important;
+                    }
+                }
+            }
+            nav div {
+                margin: 10px !important;
+                a button {
+                    width: 90px !important;
+                    height: 60px !important;
+                    font-size: 15px !important;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 426px) {
+    .cards-wrapper {
+        display: flex;
+    }
+    .card {
+        margin: 0 0.5rem;
+        width: calc(100%/3);
+    }
+    .img-wrapper {
+        height: 22vw;
+        margin: 0;
+    }
+}
