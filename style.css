@@ -539,10 +539,6 @@ body {
     height: 70px;
 }
 
-.Container2 {
-    height: 20rem;
-}
-
 
 
 @media screen and (max-width: 1440px) {
@@ -572,6 +568,13 @@ body {
     .a_img {
         width: fit-content;
         height: fit-content;
+    }
+
+    .about_us h1 {
+        font-size: 5rem !important;
+    }
+    .about_us p {
+        margin: 1rem 2rem !important;
     }
 }
 
@@ -656,6 +659,17 @@ body {
     }
     .card-body {
         height: 23rem !important;
+    }
+    .about_us h1 {
+        font-size: 4rem !important;
+    }
+    .about_us p {
+        margin: 1rem 2rem !important;
+        font-size: 30px !important;
+    }
+
+    .about_us figure div {
+        margin: 1rem 3rem !important;
     }
 }
 
@@ -746,6 +760,20 @@ body {
     .card-body {
         height: 23rem !important;
     }
+    .about_us {
+        padding: 2rem !important;
+    }
+    .about_us h1 {
+        font-size: 4rem !important;
+    }
+    .about_us p {
+        margin: 2rem !important;
+        font-size: 30px !important;
+    }
+
+    .about_us figure div {
+        margin: 1rem 3rem !important;
+    }
 }
 
 
@@ -788,7 +816,6 @@ body {
         color: ghostwhite;
         padding-top: 20px;
     }
-
 
     .museum {
         display: flex;
@@ -880,22 +907,33 @@ body {
     .card-body {
         height: 15rem !important;
     }
+    .about_us {
+        padding: 10px !important;
+        height: 30rem !important;
+    }
+    .about_us h1 {
+        font-size: 4rem !important;
+    }
+    .about_us p {
+        margin: 0 !important;
+        font-size: 18px !important;
+    }
+
+    .about_us figure div {
+        margin: 30px 15px !important;
+    }
+
+    .about_us nav div {
+        margin: 10px !important;
+    }
+    .about_us nav div button {
+        width: 120px !important;
+        height: 90px !important;
+    }
 
 }
 
-@media screen and (min-width: 426px) {
-    .cards-wrapper {
-        display: flex;
-    }
-    .card {
-        margin: 0 0.5rem;
-        width: calc(100%/3);
-    }
-    .img-wrapper {
-        height: 22vw;
-        margin: 0;
-    }
-}
+
 
 @media screen and (max-width: 375px) {
 
@@ -917,6 +955,26 @@ body {
     }
     #readmore_smallscreen {
         margin-left: 8rem;
+    }
+
+    .about_us figure{
+        padding: 0 5px;
+    }
+    .about_us figure div {
+        margin: 30px 15px !important;
+    }
+    .about_us figure div img {
+        width: 40px !important;
+        height: 40px !important;
+    }
+
+    .about_us nav div {
+        margin: 10px !important;
+    }
+    .about_us nav div button {
+        width: 100px !important;
+        height: 60px !important;
+        font-size: 15px !important;
     }
 }
 
@@ -942,5 +1000,39 @@ body {
     #readmore_smallscreen {
         margin-left: 6.5rem;
     }
+
+
+    .about_us figure{
+        padding: 0 5px;
+    }
+    .about_us figure div {
+        margin: 30px 15px 15px !important;
+    }
+    .about_us figure div img {
+        width: 35px !important;
+        height: 40px !important;
+    }
+
+    .about_us nav div {
+        margin: 10px !important;
+    }
+    .about_us nav div button {
+        width: 90px !important;
+        height: 60px !important;
+        font-size: 15px !important;
+    }
  }
 
+ @media screen and (min-width: 426px) {
+    .cards-wrapper {
+        display: flex;
+    }
+    .card {
+        margin: 0 0.5rem;
+        width: calc(100%/3);
+    }
+    .img-wrapper {
+        height: 22vw;
+        margin: 0;
+    }
+}
