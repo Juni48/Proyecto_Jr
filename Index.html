@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 
-    <link rel="icon" href="Imagenes/mona-lisa.png">
+    <link rel="icon" href="Imagenes/art-gallery.png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,18 +17,42 @@
     <!--Esta es la barra de tareas-->
     <nav class="barra_tareas" >
         <figure class="Logo_cont">
-            <a href="Index.html">
-                <img src="Imagenes/art-gallery.png" alt="Logo" id="logo_barra" width="100%">
+            <a href="Index.html" class="transc_cont">
+                <img src="Imagenes/art-gallery.png" alt="Logo" id="logo_barra" width="100%" class="transc">
             </a>
         </figure>
             <ul class="Seleccion" >
-                <li><a href="#Art">Art Gallery</a></li>
-                <li><a href="#Museums">Museums</a></li>
-                <li> <a href="#About">About</a></li>
+                    <li>
+                        <span  class="Seleccion_trans">
+                        <a href="#Art" class="Nav_trans">Art Gallery</a>
+                        </span>
+                    </li>
+                    <li>
+                        <span class="Seleccion_trans">
+                            <a href="#Museums" class="Nav_trans">Museums</a>
+                        </span>
+                    </li>
+                    <li>
+                        <span  class="Seleccion_trans">
+                            <a href="#About" class="Nav_trans">About</a>
+                        </span>
+                    </li>
             </ul>
-        <div class="Boton_cont" >
-            <a href="/"><button class="boton" >Contact me</button></a>
+        <div class="Boton_cont transc_cont" >
+            <a href="/"><button class="boton transc" >Contact</button></a>
         </div>
+        <div class="dropdown d-sm-none cont_collapse">
+            <button class="btn btn-light btn-lg dropdown-toggle" type="button" id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">
+              Menu
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                <li><a class="dropdown-item" href="#Art">Art Gallery</a></li>
+                <li><a class="dropdown-item" href="#Museums">Museums</a></li>
+                <li><a class="dropdown-item" href="#About">About</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="">Contact</a></li>
+            </ul>
+          </div>
     </nav>
     <figure class="Fondo_inicio" >
             <div  class="cont_titulo" >
@@ -585,56 +609,56 @@
                 <div class="col-12">
                   <h1>!Love Art</h1>
                   <p>!Love Art es una pagina diseñada principalmente para practicar lo aprendido
-                    en mis clases de desarrollador web, asi como tambien tener una imagen de
+                    en mis clases de Desarrollo Web, asi como tambien tener una imagen mas clara de
                     la evolucion de mis conocimientos adquiridos a lo largo del curso.
                   </p>
                 </div>
                 <figure>
                     <div>
-                        <a href="">
-                            <img src="Iconos/linkedin.png" alt="linkedin">
+                        <a href="" class="transc_cont">
+                            <img src="Iconos/linkedin.png" alt="linkedin" class="transc">
                         </a>
                     </div>
                     <div>
-                        <a href="">
-                            <img src="Iconos/twitter.png" alt="Twitter">
+                        <a href="" class="transc_cont">
+                            <img src="Iconos/twitter.png" alt="Twitter" class="transc">
                         </a>
                     </div>
                     <div>
-                        <a href="">
-                            <img src="Iconos/instagram.png" alt="instagram" >
+                        <a href="" class="transc_cont">
+                            <img src="Iconos/instagram.png" alt="instagram" class="transc">
                         </a>
                     </div>
                     <div>
-                        <a href="">
-                            <img src="Iconos/whatsapp.png" alt="Whatsapp">
+                        <a href="" class="transc_cont">
+                            <img src="Iconos/whatsapp.png" alt="Whatsapp" class="transc">
                         </a>
                     </div>
                     <div>
-                        <a href="">
-                            <img src="Iconos/google-plus.png" alt="Google" >
+                        <a href="" class="transc_cont">
+                            <img src="Iconos/google-plus.png" alt="Google" class="transc">
                         </a>
                     </div>
                 </figure>
                 <nav>
 
                         <div>
-                            <a href="#Art">
-                                <button>
+                            <a href="#Art" class="transc_cont">
+                                <button class="transc">
                                     Art Gallery
                                 </button>
                             </a>
                         </div>
                         <div>
-                            <a href="#Museums">
-                                <button>
+                            <a href="#Museums" class="transc_cont">
+                                <button class="transc">
                                     Museums
                                 </button>
                             </a>
                         </div>
                         <div>
-                            <a href="">
-                                <button>
+                            <a href="" class="transc_cont">
+                                <button class="transc">
                                    Contact
                                 </button>
                             </a>
