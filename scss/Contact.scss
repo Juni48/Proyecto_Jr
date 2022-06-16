@@ -4,7 +4,7 @@ $coloramarillo: yellow;
 body {
     text-decoration: none;
     font-family: 'Lato', sans-serif;
-    background-color: $colorbg;
+    background-color: black;
     color: $font-color;
     .barra_tareas {
         display: grid;
@@ -23,13 +23,17 @@ body {
             justify-self: center;
             margin: 1rem;
         }
+        .Logo_cont_der{
+            align-self: center;
+            justify-self: center;
+            margin: 1rem;
+        }
         #logo_barra {
             width: 3.5rem;
         }
         .Seleccion {
             display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
-            font-size: 1.5rem;
+            font-size: 2.5rem;
             font-weight: 700;
             list-style: none;
             align-self: center;
@@ -58,17 +62,168 @@ body {
         }
     }
     .Contact {
-        margin: 9rem 10rem 0 10rem;
+        background-image: url(Imagenes/man-2590655.jpg);
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
         text-align: left;
+        margin: 5rem 1rem 0;
+        height: 55.5rem;
         .Reach_us {
-            padding: 10rem;
-            height: 50rem;
-            background-color:black;
+            margin: 7rem 0 0 7rem;
+            background-color: rgba(#191919, 0.5);
+            border-radius: 2rem;
+            position: relative;
+            left: 100PX;
+            height: 38.5rem;
+            z-index: 1;
+            div {
+                h3 {
+                    font-size: 3rem;
+                    margin-left: 7rem;
+                    img {
+                       margin: 0 10px 10px 0;
+                    }
+                }
+                p {
+                    font-size: 2rem;
+                    margin-right: 7rem;
+                    margin-left: 11rem;
+                }
+            }
+            h1 {
+                font-size: 5rem;
+                font-weight: 900;
+            }
         }
         .Message {
-            padding: 10rem;
-            height: 50rem;
-            background-color: black;
+            margin: 7rem 0 0;
+            z-index: 2;
+            aside {
+                background-color: black;
+                width: 45rem;
+                border: black solid 60px;
+                border-radius: 5rem;
+                font-size: 25px;
+                .cont_button {
+                    justify-content: center;
+                    .button {
+                        padding: 10px 15px;
+                        font-size: 20px;
+                        font-weight: 700;
+                        border-radius: 2rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    .Contact {
+        height: 50rem !important;
+    }
+    .Reach_us {
+        margin: 7rem 0 0 1rem !important;
+        left: 50px !important;
+    }
+    .Message {
+        position: relative !important;
+        right: 30px !important;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .Reach_us {
+        width: 15rem !important;
+        div {
+            h3 {
+                font-size: 40px !important;
+                margin-left: 2.5rem !important;
+                img {
+                   margin: 0 5px 5px 0 !important;
+                }
+            }
+            p {
+                font-size: 20px !important;
+                margin-right: 0 !important;
+                margin-left: 6.5rem !important;
+            }
+         }
+    }
+    .Message {
+        aside {
+            width: 30rem !important;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .Reach_us {
+        left: 50px !important;
+        h1 {
+            font-size: 50px !important;
+            margin-bottom: 3rem !important;
+        }
+        div {
+            h3 {
+                font-size: 25px !important;
+                margin-left: 0 !important;
+                img {
+                   margin: 0 5px 5px 0 !important;
+                   width: 40px !important;
+                   height: 40px !important;
+                }
+            }
+            p {
+                font-size: 20px !important;
+                margin-left: 2rem !important;
+            }
+         }
+    }
+    .Message {
+        right: 15px !important;
+        aside {
+            width: 25rem !important;
+        }
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .barra_tareas {
+        display: flex !important;
+        justify-content: center !important;
+        .Seleccion {
+            display: none !important;
+        }
+        .Logo_cont_der {
+            display: none !important;
+        }
+    }
+    .Contact {
+       width: fit-content !important;
+    }
+    .Reach_us {
+        left: 0 !important;
+        margin: 8px 0 0 0 !important;
+        height: fit-content !important;
+        border-radius: unset !important;
+        h1 {
+            font-size: 40px !important;
+            margin-top: 2px !important;
+            margin-bottom: 7px !important;
+            text-align: center !important;
+        }
+    }
+    .Message {
+        right: 0 !important;
+        margin: 0 !important;
+        width: fit-content !important;
+        height: fit-content !important;
+        aside {
+            width: 25rem !important;
+            border-radius: unset !important;
+            border: 15px solid black !important;
         }
     }
 }
