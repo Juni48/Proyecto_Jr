@@ -1,0 +1,74 @@
+$colorbg: #191919;
+$font-color: ghostwhite;
+$coloramarillo: yellow;
+body {
+    text-decoration: none;
+    font-family: 'Lato', sans-serif;
+    background-color: $colorbg;
+    color: $font-color;
+    .barra_tareas {
+        display: grid;
+        grid-template-columns: 1fr 5fr 1fr;
+        background-color: black;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        margin: 0rem .04rem;
+        z-index: 2;
+
+
+        .Logo_cont {
+            align-self: center;
+            justify-self: center;
+            margin: 1rem;
+        }
+        #logo_barra {
+            width: 3.5rem;
+        }
+        .Seleccion {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            font-size: 1.5rem;
+            font-weight: 700;
+            list-style: none;
+            align-self: center;
+            text-align: center;
+            padding-top: 1rem;
+            a {
+                text-decoration: none;
+                color: $font-color;
+            }
+        }
+        .Boton_cont {
+            align-self: center;
+            justify-self: center;
+            a .boton {
+                padding: .7rem;
+                border-radius: .5rem;
+                width: 6rem;
+                background-color: $font-color;
+                border: solid 2px black;
+                font-weight: 550;
+            }
+        }
+        .Menu_img {
+            width: 25px;
+            height: 25px;
+        }
+    }
+    .Contact {
+        margin: 9rem 10rem 0 10rem;
+        text-align: left;
+        .Reach_us {
+            padding: 10rem;
+            height: 50rem;
+            background-color:black;
+        }
+        .Message {
+            padding: 10rem;
+            height: 50rem;
+            background-color: black;
+        }
+    }
+}

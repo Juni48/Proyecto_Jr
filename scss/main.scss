@@ -1,6 +1,6 @@
 $colorbg: #191919;
 $font-color: ghostwhite;
-
+$coloramarillo: yellow;
 
 body {
     text-decoration: none;
@@ -62,6 +62,10 @@ body {
                 border: solid 2px black;
                 font-weight: 550;
             }
+        }
+        .Menu_img {
+            width: 25px;
+            height: 25px;
         }
     }
     .cont_titulo {
@@ -391,6 +395,39 @@ body {
             font-size: 1.4rem;
         }
     }
+    .Video {
+        height: 50rem;
+        padding-top: 3rem;
+        h1 {
+            color: $font-color;
+            text-align: center;
+            font-size: 80px;
+            font-weight: 900;
+        }
+        .Video_Descripcion {
+            display: flex;
+            padding: 5rem 15rem;
+            color: ghostwhite;
+            align-items: center;
+            h3 {
+                font-size: 60px;
+                text-align: center;
+            }
+            p {
+                font-size: 25px;
+                margin: 2rem 0 1rem 5rem;
+            }
+            .video_cont_readmore{
+                text-align: center;
+                a {
+                    .Read_more {
+                        width: 4rem;
+                        height: 4rem;
+                    }
+                }
+            }
+        }
+    }
     .Cont_louvre {
         margin: 0;
         height: 60rem;
@@ -499,7 +536,6 @@ body {
                             justify-content: center;
                             div {
                                 margin: 2.5rem 3rem;
-    
                                  img {
                                      width: 3rem;
                                      height: 3rem;
@@ -523,7 +559,6 @@ body {
                                 }
                             }
                         }
-    
                         .Design_by {
                             background-color: black;
                         }
@@ -558,10 +593,7 @@ body {
     transition-property: all;
     transition-duration: 3s;
     }
-    .museum_cont:hover #Artmov {
-    filter: grayscale(80%);
-    transition: all 500ms ease-in-out;
-    }
+
     .Cont_louvre:hover .img_louvre {
     -webkit-transform:scale(1.1);transform:scale(1.1);
     transition: 2s;
@@ -596,6 +628,12 @@ body {
                 .Read_more {
                     margin: 2rem 0 0 0!important;
                 }
+            }
+        }
+        .Video {
+                height: fit-content !important;
+            .Video_Descripcion {
+                padding: 5rem !important;
             }
         }
         .titulo_louvre {
@@ -690,6 +728,27 @@ body {
                 width: 100% !important;
             }
         }
+        .Video {
+            height: 40rem !important;
+            .Video_Descripcion {
+                padding: 2.5rem 2.5rem 2.5rem 1rem !important;
+                h3 {
+                    font-size: 40px !important;
+                }
+                p {
+                    font-size: 20px !important;
+                    margin: 1rem 0 1rem 2rem !important;
+                }
+                .video_cont_readmore{
+                    a {
+                        .Read_more {
+                            width: 3rem !important;
+                            height: 3rem !important;
+                        }
+                    }
+                }
+            }
+        }
         .titulo_louvre {
             font-size: 8rem !important;
             left: 14rem !important;
@@ -773,10 +832,47 @@ body {
                 width: 100% !important;
             }
         }
+        .Video {
+            height: fit-content !important;
+            h1 {
+                font-size: 60px !important;
+            }
+            .Video_Descripcion {
+                padding: 2rem 2.5rem 2.5rem 1rem !important;
+                display: block !important;
+                text-align: center !important;
+                iframe {
+                    width: 90% !important;
+                }
+                .Dis_768 {
+                    display: block !important;
+                    h3 {
+                        font-size: 50px !important;
+                    }
+                    p {
+                        font-size: 25px !important;
+                    }
+                    .video_cont_readmore{
+                        a {
+                            .Read_more {
+                                width: 4rem !important;
+                                height: 4rem !important;
+                            }
+                        }
+                    }
+                }
+            }
+        }
         .titulo_louvre {
             font-size: 8rem !important;
             left: 6rem !important;
         }
+        .Cont_louvre {
+            height: fit-content;
+            img {
+                height: 600px !important;
+            }
+         }
         .card-body {
             height: 23rem !important;
         }
@@ -885,6 +981,39 @@ body {
             }
             .articulo10 figure img {
                 width: 425px !important;
+            }
+        }
+        .Video {
+            height: fit-content !important;
+            h1 {
+                font-size: 40px !important;
+            }
+            .Video_Descripcion {
+                padding: 0 !important;
+                display: block !important;
+                text-align: center !important;
+                iframe {
+                    width: 90% !important;
+                    height: 200px !important;
+                }
+                .Dis_768 {
+                    h3 {
+                        font-size: 40px !important;
+                    }
+                    p {
+                        font-size: 18px !important;
+                        margin: 5px !important;
+                        text-align: justify !important;
+                    }
+                    .video_cont_readmore{
+                        a {
+                            .Read_more {
+                                width: 4rem !important;
+                                height: 4rem !important;
+                            }
+                        }
+                    }
+                }
             }
         }
         .Cont_louvre {
