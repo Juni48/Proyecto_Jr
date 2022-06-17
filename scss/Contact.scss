@@ -17,7 +17,6 @@ body {
         margin: 0rem .04rem;
         z-index: 2;
 
-
         .Logo_cont {
             align-self: center;
             justify-self: center;
@@ -65,7 +64,6 @@ body {
         background-image: url(Imagenes/man-2590655.jpg);
         background-size: cover;
         background-position: center center;
-        background-repeat: no-repeat;
         text-align: left;
         margin: 5rem 1rem 0;
         height: 55.5rem;
@@ -121,16 +119,20 @@ body {
 
 @media screen and (max-width: 1440px) {
     .Contact {
-        height: 50rem !important;
+        padding-top: 10rem !important;
+        margin:0 !important;
+        width: 100%;
+        .Reach_us {
+            margin: 0 !important;
+            left: 80px !important;
+        }
+        .Message {
+            margin: 0 !important;
+            position: relative;
+            right: 30px !important;
+        }
     }
-    .Reach_us {
-        margin: 7rem 0 0 1rem !important;
-        left: 50px !important;
-    }
-    .Message {
-        position: relative !important;
-        right: 30px !important;
-    }
+
 }
 
 @media screen and (max-width: 1024px) {
@@ -201,12 +203,14 @@ body {
         }
     }
     .Contact {
-       width: fit-content !important;
+       width: 100% !important;
+       padding-top: 5rem !important;
     }
     .Reach_us {
-        left: 0 !important;
-        margin: 8px 0 0 0 !important;
+        position: unset !important;
         height: fit-content !important;
+        padding: 20px !important;
+        margin: 80px !important;
         border-radius: unset !important;
         h1 {
             font-size: 40px !important;
@@ -216,12 +220,31 @@ body {
         }
     }
     .Message {
-        right: 0 !important;
-        margin: 0 !important;
-        width: fit-content !important;
-        height: fit-content !important;
+        width: 425px !important;
         aside {
-            width: 25rem !important;
+            width: 460px !important;
+            padding: 1rem 1rem !important;
+            border-radius: unset !important;
+        }
+    }
+}
+@media screen and (max-width: 375px) {
+    .Message {
+        width: 425px !important;
+        aside {
+            width: 410px !important;
+            padding: 1rem 2rem !important;
+            border-radius: unset !important;
+            border: 15px solid black !important;
+        }
+    }
+}
+@media screen and (max-width: 320px) {
+    .Message {
+        width: 425px !important;
+        aside {
+            width: 360px !important;
+            padding: 1rem 2rem !important;
             border-radius: unset !important;
             border: 15px solid black !important;
         }
