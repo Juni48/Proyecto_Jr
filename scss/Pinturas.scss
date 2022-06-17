@@ -1,0 +1,344 @@
+$font-color: ghostwhite;
+body {
+    text-decoration: none;
+    font-family: 'Lato', sans-serif;
+    background-color: #191919;
+    color: $font-color;
+    .barra_tareas {
+        display: grid;
+        grid-template-columns: 1fr 5fr 1fr;
+        background-color: black;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 3;
+
+
+        .Logo_cont {
+            align-self: center;
+            justify-self: center;
+            margin: 1rem;
+        }
+        .Logo_cont_der{
+            align-self: center;
+            justify-self: center;
+            margin: 1rem;
+        }
+        #logo_barra {
+            width: 3.5rem;
+        }
+        .Seleccion {
+            display: grid;
+            font-size: 2.5rem;
+            font-weight: 700;
+            list-style: none;
+            align-self: center;
+            text-align: center;
+            padding-top: 1rem;
+            a {
+                text-decoration: none;
+                color: $font-color;
+            }
+        }
+        .Boton_cont {
+            align-self: center;
+            justify-self: center;
+            a .boton {
+                padding: .7rem;
+                border-radius: .5rem;
+                width: 6rem;
+                background-color: $font-color;
+                border: solid 2px black;
+                font-weight: 550;
+            }
+        }
+        .Menu_img {
+            width: 25px;
+            height: 25px;
+        }
+    }
+    .Monalisa {
+        display: flex;
+        margin-top: 4rem;
+        padding: 3rem 10rem 0rem;
+        background-image: url(Imagenes/LouvreBg.jpg);
+        background-size: cover;
+        background-position: bottom center;
+        background-repeat: no-repeat;
+        .Mona_cont{
+            z-index: 2;
+            .Image_Mona {
+                width: 40rem;
+                height: 47.5rem;
+                border-radius: 1rem;
+            }
+            p {
+                text-align: center;
+                font-size: 20px;
+                color: ghostwhite;
+                font-weight: 700;
+            }
+        }
+    }
+    .Descripcion {
+        background-color: rgba(#191919, 0.8);
+        border-radius: 1rem;
+        height: 47.5rem;
+        position: relative;
+        right: 15px;
+        h1 {
+            text-align: center;
+            font-size: 5rem;
+            font-weight: 900;
+            margin-top: 3rem;
+        }
+        p {
+            padding: 2rem 3rem;
+            font-size: 30px;
+        }
+        img {
+            position: relative;
+            width: 70px;
+            height: 70px;
+            left: 450px;
+            bottom: 10px;
+        }
+    }
+    .Blog {
+        height: fit-content;
+        margin: 0rem 20rem;
+        padding-top: 5rem;
+        background-color: #191919;
+        .Img_1 {
+            float: left;
+            height: fit-content;
+            img {
+                width: 40rem;
+                height: 40rem;
+                margin-right: 40px;
+            }
+            p {
+                font-size: 1.5rem;
+                margin: 15px auto 0;
+                padding-left: 5px;
+                color: #7a7a7a;
+                border-left: 1px solid goldenrod;
+                width: fit-content;
+            }
+        }
+        .Text_1 {
+            h1 {
+                font-size: 4rem;
+            }
+            p {
+                font-size: 2rem;
+                text-align: justify;
+            }
+        }
+    }
+    //Transiciones //Animaciones
+    .Read_more, .transc{
+        transition-property: all;
+        transition-duration: 1s;
+        }
+        .Nav_trans {
+            transition-property: all;
+            transition-duration: 2s;
+        }
+        .Seleccion_trans:hover .Nav_trans{
+            text-decoration: underline;
+            transition: all 500ms ease-in-out;
+        }
+        .transc_cont:hover .transc{
+        -webkit-transform:scale(1.3);transform:scale(1.3);
+        transition: all 200ms ease-in-out;
+        }
+        .a_img:hover .Read_more {
+        -webkit-transform:scale(1.3);transform:scale(1.3);
+        transition: all 300ms ease-in-out;
+        }
+}
+
+
+@media screen and (max-width: 1440px) {
+    .Monalisa {
+        padding: 5% !important;
+        .Image_Mona {
+            width: fit-content !important;
+        }
+        .Descripcion {
+            p {
+                font-size: 25px !important;
+            }
+            img {
+                left: 320px !important;
+                bottom: 40px !important;
+            }
+        }
+    }
+        .Blog {
+            margin: auto !important;
+            width: 85% !important;
+            .Img_1 {
+                img {
+                    width: 35rem !important;
+                    height: 35rem !important;
+                }
+            }
+        }
+}
+@media screen and (max-width: 1024px) {
+    .Monalisa {
+        .Mona_cont{
+            width: 30rem !important;
+            .Image_Mona {
+                width: 30rem !important;
+            }
+        }
+        .Descripcion {
+            width: 30rem !important;
+            h1{
+                font-size: 4rem !important;
+                margin-bottom: 0 !important;
+            }
+            p {
+                font-size: 20px !important;
+                padding-top: 5px !important;
+            }
+            img {
+                left: 200px !important;
+                bottom: 30px !important;
+            }
+        }
+    }
+    .Blog {
+        margin: auto !important;
+        width: 85% !important;
+        .Img_1 {
+            img {
+                width: 28rem !important;
+                height: 28rem !important;
+            }
+        }
+        .Text_1{
+            p{
+                font-size: 25px !important;
+            }
+        }
+    }
+}
+@media screen and (max-width: 768px){
+    .Monalisa {
+        padding-top: 45px !important;
+        height: fit-content !important;
+        .Mona_cont{
+            width: 20rem !important;
+            height: 32rem !important;
+            .Image_Mona {
+                width: 20rem !important;
+                height: 30rem !important;
+            }
+            p {
+                font-size: 15px !important;
+            }
+        }
+        .Descripcion {
+            width: 30rem !important;
+            height: 30rem !important;
+            h1{
+                font-size: 32px !important;
+                margin-bottom: 0 !important;
+            }
+            p {
+                font-size: 16px !important;
+                padding: 5px 10px 0 25px !important;
+            }
+            img {
+                width: 40px !important;
+                height: 40px !important;
+                left: 160px !important;
+                bottom: 10px !important;
+            }
+        }
+    }
+    .Blog {
+        margin: auto !important;
+        width: 85% !important;
+        .Img_1 {
+            img {
+                width: 20rem !important;
+                height: 20rem !important;
+            }
+            p {
+                font-size: 13px !important;
+            }
+        }
+        .Text_1{
+            p{
+                font-size: 20px !important;
+            }
+        }
+    }
+}
+@media screen and (max-width: 425px) {
+    .barra_tareas {
+        display: flex !important;
+        justify-content: center !important;
+        .Seleccion {
+            display: none !important;
+        }
+        .Logo_cont_der {
+            display: none !important;
+        }
+    }
+    .Monalisa {
+        display: block !important;
+        .Mona_cont{
+            width: 100% !important;
+            height: fit-content !important;
+            text-align: center !important;
+            .Image_Mona {
+                width: 80% !important;
+                height: 20rem !important;
+            }
+            p {
+                display: none;
+            }
+        }
+        .Descripcion {
+            width: 100% !important;
+            height: fit-content !important;
+            position: unset !important;
+            h1{
+                margin-top: 0 !important;
+            }
+            img {
+                left: 50% !important;
+                bottom: -15px !important;
+            }
+        }
+    }
+    .Blog {
+        margin: auto !important;
+        width: 85% !important;
+        padding-top: 50px !important;
+        .Img_1 {
+            float: unset !important;
+            width: fit-content !important;
+            img {
+                width: 100% !important;
+                height: 20rem !important;
+                margin-right: 0 !important;
+            }
+            p {
+                font-size: 13px !important;
+            }
+        }
+        .Text_1{
+            p{
+                font-size: 20px !important;
+            }
+        }
+    }
+}
