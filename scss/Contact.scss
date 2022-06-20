@@ -1,15 +1,13 @@
-$colorbg: #191919;
-$font-color: ghostwhite;
-$coloramarillo: yellow;
+@import 'global' ;
 body {
     text-decoration: none;
-    font-family: 'Lato', sans-serif;
+    font-family: $Font-family;
     background-color: black;
     color: $font-color;
     .barra_tareas {
         display: grid;
         grid-template-columns: 1fr 5fr 1fr;
-        background-color: black;
+        background-color: $colorbg;
         position: fixed;
         top: 0;
         left: 0;
@@ -69,7 +67,7 @@ body {
         height: 55.5rem;
         .Reach_us {
             margin: 7rem 0 0 7rem;
-            background-color: rgba(#191919, 0.5);
+            background-color: rgba($colorbg, 0.5);
             border-radius: 2rem;
             position: relative;
             left: 100PX;
