@@ -410,17 +410,17 @@ body {
         height: 15rem;
         background-color: $colorbg;
         text-align: center;
-        div h1 {
+        .h1P {
             color: whitesmoke;
             font-size: 5rem;
             padding-bottom: 1rem;
         }
-        div .InputPintura {
+        #inputPintura {
             height: 3.5rem;
             width: 20rem;
             border-radius: 5px;
         }
-        div button {
+        #buttonP {
             width: 5.6rem;
             height: 3.5rem;
             border-radius: 5px;

@@ -363,15 +363,15 @@ body {
     height: 15rem;
     background-color: #191919;
     text-align: center; }
-    body .recomendaciones div h1 {
+    body .recomendaciones .h1P {
       color: whitesmoke;
       font-size: 5rem;
       padding-bottom: 1rem; }
-    body .recomendaciones div .InputPintura {
+    body .recomendaciones #inputPintura {
       height: 3.5rem;
       width: 20rem;
       border-radius: 5px; }
-    body .recomendaciones div button {
+    body .recomendaciones #buttonP {
       width: 5.6rem;
       height: 3.5rem;
       border-radius: 5px; }
