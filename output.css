@@ -359,6 +359,22 @@ body {
     body .museum .Description_art {
       text-align: center;
       font-size: 1.4rem; }
+  body .recomendaciones {
+    height: 15rem;
+    background-color: #191919;
+    text-align: center; }
+    body .recomendaciones div h1 {
+      color: whitesmoke;
+      font-size: 5rem;
+      padding-bottom: 1rem; }
+    body .recomendaciones div .InputPintura {
+      height: 3.5rem;
+      width: 20rem;
+      border-radius: 5px; }
+    body .recomendaciones div button {
+      width: 5.6rem;
+      height: 3.5rem;
+      border-radius: 5px; }
   body .Video {
     height: 50rem;
     padding-top: 3rem; }

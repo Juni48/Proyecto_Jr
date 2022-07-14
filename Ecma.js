@@ -2,71 +2,42 @@ console.log("Hola desde la consola");
 
 
 
+
+
+
+
+
+
 const isCompleted = false;
+const tasks = [];
 
 
-const tasks = [
-    {
-        description: "Monalisa",
-        isCompleted: false,
-    },
-    {
-        description: "Ultima Cena",
-        isCompleted: false
-    },
+const Task = function(description, isCompleted){
+    this.description = description;
+    this.isCompleted = isCompleted;
+}
 
-    {
-        description: "Noche Estrellada",
-        isCompleted: false
-    },
-    {
-        description: "Guernica",
-        isCompleted: false
-    },
-    {
-        description: "El Grito",
-        isCompleted: false
-    },
-    {
-        description: "Creacion de Adan",
-        isCompleted: false
-    },
-    {
-        description: "Las meninas",
-        isCompleted: false
-    },
-    {
-        description: "Nacimiento de Venus",
-        isCompleted: false
-    },
-    {
-        description: "El beso",
-        isCompleted: false
-    },
-    {
-        description: "La joven de la Perla",
-        isCompleted: false
-    },
-    {
-        description: "La ronda de la Noche",
-        isCompleted: false
-    },
-    {
-        description: "La balsa de la Medusa",
-        isCompleted: false
+function addTask(description, isCompleted = false){
+    tasks.push(new Task(description, isCompleted));
+}
+
+function toggleTaskCompleted(tasks, index) {
+    const newTasks = [].concat(tasks);
+    if(newTasks[index]) {
+      newTasks[index].isCompleted = !newTasks[index].isCompleted;
     }
-];
+    return newTasks;
+  }
 
-const toggleTaskCompleted = (index) => {
-    tasks[index].isCompleted = !tasks[index].isCompleted;
-}
-
-const deleteTask = (index) => {
-    tasks.splice(index, 1);
-}
-
+function deleteTask(tasks, index) {
+    const newTasks = tasks.filter(function(task, i) {
+      return i !== index;
+    })
+    return newTasks;
+  }
 
 
-toggleTaskCompleted(0)
-deleteTask(0)
+addTask("Monalisa", true)
+addTask("Noche estrellada")
+
 console.log(tasks)

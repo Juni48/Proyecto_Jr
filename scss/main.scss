@@ -406,6 +406,26 @@ body {
             font-size: 1.4rem;
         }
     }
+    .recomendaciones {
+        height: 15rem;
+        background-color: $colorbg;
+        text-align: center;
+        div h1 {
+            color: whitesmoke;
+            font-size: 5rem;
+            padding-bottom: 1rem;
+        }
+        div .InputPintura {
+            height: 3.5rem;
+            width: 20rem;
+            border-radius: 5px;
+        }
+        div button {
+            width: 5.6rem;
+            height: 3.5rem;
+            border-radius: 5px;
+        }
+    }
     .Video {
         height: 50rem;
         padding-top: 3rem;
