@@ -307,11 +307,15 @@
         </article>
     </section>
     <section class="recomendaciones" id="app">
-        <h1 class="h1P">Nueva Pintura</h1>
+        <h1 class="h1P">New Paint</h1>
         <form>
-            <input type="text" placeholder="Escriba la nueva pintura" id="inputPintura">
-            <button type="button" id="buttonP" onclick="captura()">Add</button>
+            <input type="text" placeholder="Type the new paint" id="inputPintura" autocomplete="off">
+            <button type="button" id="buttonP" class="btnP" onclick="captura()">Add</button>
         </form>
+        <ul class="todos" id="todos">
+        </ul>
+        <small class="ind">left click to mark as completed</small> <br>
+        <small class="ind">right click to remove</small>
     </section>
     <Section class="Video">
             <h1>¡Aprende mas sobre Arte!</h1>

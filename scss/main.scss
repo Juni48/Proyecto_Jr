@@ -407,25 +407,51 @@ body {
         }
     }
     .recomendaciones {
-        height: 15rem;
+        height: 50rem;
         background-color: $colorbg;
         text-align: center;
         .h1P {
             color: whitesmoke;
-            font-size: 5rem;
+            font-size: 10vh;
             padding-bottom: 1rem;
         }
-        #inputPintura {
-            height: 3.5rem;
-            width: 20rem;
-            border-radius: 5px;
+        form {
+            #inputPintura {
+                height: 3.5rem;
+                width: 25vh;
+                border-radius: 5px;
+            }
+            .btnP {
+                width: 5.6rem;
+                height: 3.5rem;
+                border-radius: 5px;
+            }
         }
-        #buttonP {
-            width: 5.6rem;
-            height: 3.5rem;
-            border-radius: 5px;
+        ul {
+            list-style: none;
+            text-align: center;
+            padding: 0;
+            margin-top: 10px;
+            margin-bottom: 0;
+            li{
+                color: $font-color;
+                font-size: 1.5rem;
+                cursor: pointer;
+                margin: 0;
+            }
+
+            li.completed {
+                text-decoration: line-through;
+                color: #b6b6b6;
+            }
+
+        }
+        small {
+            color: $font-color;
         }
     }
+
+ 
     .Video {
         height: 50rem;
         padding-top: 3rem;
