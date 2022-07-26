@@ -1,29 +1,30 @@
 
-console.log("Hola desde la consola");
+console.log("Hello world");
 
-const isCompleted = false;
+
 const tasks = [];
-const todos = document.getElementById("todos")
+const todos = document.getElementById("todos");
 
 
 
 const Task = function(description, isCompleted){
     this.description = description;
     this.isCompleted = isCompleted;
-}
+};
 
 function addTask(description, isCompleted = false){
     tasks.push(new Task(description, isCompleted));
-}
+};
 
-function captura(){
-  const nombrePint = document.getElementById('inputPintura').value;
-  addTask(nombrePint);
+function capture(){
+  const namePaint = document.getElementById('inputPaint').value;
+  addTask(namePaint);
 
 
-      const todoText = inputPintura.value
+      const todoText = inputPaint.value;
 
-    if (nombrePint) {
+
+    if (namePaint) {
       const todoEl = document.createElement("li");
       todoEl.innerText = todoText;
 
@@ -32,18 +33,38 @@ function captura(){
         todoEl.classList.toggle('completed')
       });
 
+
+
       todoEl.addEventListener('contextmenu',
       (e)=> {
         e.preventDefault();
 
         todoEl.remove();
-      })
+      });
+
 
       todos.appendChild(todoEl);
-      inputPintura.value = ''
-    }
+      inputPaint.value = ''
+    };
+
     console.log(tasks)
-}
+};
+
+
+function toggleTaskCompleted(tasks, index) {
+  const newTasks = [].concat(tasks);
+  if(newTasks[index]) {
+    newTasks[index].isCompleted = !newTasks[index].isCompleted;
+  };
+  return newTasks;
+};
+
+function deleteTask(tasks, index) {
+  const newTasks = tasks.filter(function(task, i) {
+    return i !== index;
+  });
+  return newTasks;
+};
 
 
 
@@ -52,20 +73,23 @@ function captura(){
 
 
 
-// function toggleTaskCompleted(tasks, index) {
-//     const newTasks = [].concat(tasks);
-//     if(newTasks[index]) {
-//       newTasks[index].isCompleted = !newTasks[index].isCompleted;
-//     }
-//     return newTasks;
-//   }
 
-// function deleteTask(tasks, index) {
-//     const newTasks = tasks.filter(function(task, i) {
-//       return i !== index;
-//     })
-//     return newTasks;
-//   }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 // addTask("Monalisa")
@@ -93,28 +117,6 @@ function captura(){
 // toggleTaskCompleted(tasks,10)
 // toggleTaskCompleted(tasks,11)
 // console.log(tasks)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
